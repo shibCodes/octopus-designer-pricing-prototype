@@ -49,7 +49,7 @@ const CloudPricing = (props: Cloud) => {
 
     // Update pricing based on users team selection
     React.useEffect(() => {
-        if ((props.selectedUser?.targets && props.selectedUser?.minutes) && props.selectedUser?.id != lastSelectedUserID) {
+        if ((props.selectedUser?.targets && props.selectedUser?.minutes) && props.selectedUser?.id !== lastSelectedUserID) {
             updateUserTargets(props.selectedUser?.targets);
             setValidMinutes(props.selectedUser?.minutes);
             setLastSelectedUserID(props.selectedUser?.id);

@@ -1,7 +1,6 @@
 import * as React from "react";
-import { useState } from "react";
-import { Box, Button, Grid, Theme, Typography } from "@material-ui/core";
-import { makeStyles, ThemeProvider, createTheme, createStyles } from "@material-ui/core/styles";
+import { Box, Button,Theme } from "@material-ui/core";
+import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { UserType } from "../interfaces/UserType";
 
 
@@ -50,7 +49,7 @@ const User = (props: UserType) => {
                     color={ (props.selected?.id === props.id) ? "secondary" : "default"}
                     disableElevation
                     onClick={() => {
-                        if (props.id != 0) {
+                        if (props.id !== 0) {
                             props.select!(props);
                             window.scrollTo(0, document.body.scrollHeight);
                         }

@@ -45,7 +45,7 @@ const ServerPricing = (props: Server) => {
 
     // Update pricing based on users team selection
     React.useEffect(() => {
-        if ((props.selectedUser?.targets && props.selectedUser?.minutes) && props.selectedUser?.id != lastSelectedUserID) {
+        if ((props.selectedUser?.targets && props.selectedUser?.minutes) && props.selectedUser?.id !== lastSelectedUserID) {
             updateUserTargets(props.selectedUser?.targets);
             setLastSelectedUserID(props.selectedUser?.id);
         }
@@ -91,7 +91,6 @@ const ServerPricing = (props: Server) => {
     );
     const [haCheckboxVal, setHaCheckboxVal] = useState(false);
     const isEligibleHA = valueTargets >= HIGH_AVAILABILITY_TARGETS;
-    const renderHaChecked = haCheckboxVal || isEligibleHA;
     const highAvailabilityCheck = (e: { target: { checked: any } }) => {
         // Updating checkbox state
         const newHaCheckboxVal = e.target.checked;
