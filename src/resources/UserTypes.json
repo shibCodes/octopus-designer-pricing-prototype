@@ -1,0 +1,46 @@
+[
+    {
+        "id": 0,
+        "title": "Just me",
+        "description": "Our Community edition is best for open source or personal projects.",
+        "button": "Learn more",
+        "link": "#",
+        "targets": 0,
+        "minutes": 0,
+        "highAvail": false,
+        "recommended": "community"
+    },
+    {
+        "id": 1,
+        "title": "Small team",
+        "description": "Small team of 2 - 4 developers with smaller scale projects that only need a few deployment targets.",
+        "button": "Select",
+        "link": "#",
+        "targets": 15,
+        "minutes": 100,
+        "highAvail": false,
+        "recommended": "cloud"
+    },
+    {
+        "id": 2,
+        "title": "Large team",
+        "description": "Large team of 10+ developers requiring 20+ deployment targets and high availability.",
+        "button": "Select",
+        "link": "#",
+        "targets": 25,
+        "minutes": 250,
+        "highAvail": true,
+        "recommended": "server"
+    },
+    {
+        "id": 3,
+        "title": "Enterprise",
+        "description": "Need the targets and high availability required for large scale organisations.",
+        "button": "Select",
+        "link": "#",
+        "targets": 100,
+        "minutes": 500,
+        "highAvail": true,
+        "recommended": "server"
+    }
+]
